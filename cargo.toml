@@ -1,0 +1,12 @@
+[package]
+name = "dns-update"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+public-ip = "0.2.2"
+trust-dns-resolver = { version = "0.20.3", features = ["tokio-runtime"] }
+tokio = { version = "1", features = ["full"] }
+hyper = "0.14"
+hyper-tls = "0.5"
+
